@@ -1,0 +1,44 @@
+{
+  "name": "bunserve",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "bun",
+    "fileserver",
+    "simple",
+    "zero-config",
+    "optimized",
+    "bunserve"
+  ],
+  "homepage": "https://github.com/sancho1952007/bunserve#readme",
+  "bugs": {
+    "url": "https://github.com/sancho1952007/bunserve/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sancho1952007/bunserve.git"
+  },
+  "license": "ISC",
+  "author": "Sancho Godinho",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "bunserve": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "bun --watch index.ts",
+    "build": "bun build --minify ./index.ts --target bun --outdir ./dist"
+  },
+  "dependencies": {
+    "bun-types": "^1.3.13",
+    "typescript": "^5.9.3",
+    "undici-types": "^7.19.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "module": "index.ts"
+}
