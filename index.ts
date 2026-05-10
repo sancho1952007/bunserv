@@ -18,7 +18,7 @@ let cachingEnabled = false;
 let caches = new Map<string, Response>();
 
 // Hostname
-let hostname: any = '0.0.0.0';
+let hostname: string = '0.0.0.0';
 
 // Stores the log writer
 let logWriter: WriteStream;
@@ -56,7 +56,7 @@ const { values } = parseArgs({
 });
 
 // The directory where script is triggered
-const root_dir = values.dir || process.cwd();
+const root_dir = typeof values.dir === 'string' ? values.dir : process.cwd();
 
 if (values.savelog) {
     let logFilePath;
@@ -112,7 +112,7 @@ if (values.cache) {
 
 if (values.hostname) {
     log(`[LOG] Using hostname ${values.hostname}`)
-    hostname = values.hostname;
+    hostname = values.hostname as string;
 }
 
 const portParsed = parseInt(values.port as string);

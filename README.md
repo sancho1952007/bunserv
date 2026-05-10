@@ -11,7 +11,7 @@
 - **⚡️ Blazing Fast**: Leverages Bun's native `serve` API for maximum throughput.
 - **📦 Zero Config**: Start serving files instantly with a single command.
 - **📁 Directory Listing**: Automatically generates a clean HTML listing for directories (if no `index.html` is present).
-- **💾 Smart Caching**: Built-in memory caching for high-performance asset delivery.
+- **💾 Caching**: Built-in memory caching for high-performance asset delivery.
 - **📝 Advanced Logging**: Optional request logging to console or persistent files.
 - **🛠 Customizable**: Fine-grained control over ports, hostnames, and root directories.
 
