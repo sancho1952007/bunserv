@@ -1,6 +1,6 @@
-# ⚡️ Bunserve
+# ⚡️ Bunserv
 
-**bunserve** is a lightning-fast, zero-config static file server built with [Bun](https://bun.sh/). It's designed to be the simplest way to serve your files over HTTP with modern performance and minimal footprint.
+**bunserv** is a lightning-fast, zero-config static file server built with [Bun](https://bun.sh/). It's designed to be the simplest way to serve your files over HTTP with modern performance and minimal footprint.
 
 [![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=flat&logo=bun&logoColor=white)](https://bun.sh)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
@@ -17,33 +17,33 @@
 
 ## 📦 Installation
 
-You can run `bunserve` directly using `bunx`:
+You can run `bunserv` directly using `bunx`:
 
 ```bash
-bunx bunserve
+bunx bunserv
 ```
 
 Or install it globally:
 
 ```bash
-bun install -g bunserve
+bun install -g bunserv
 ```
 
 ## 🛠 Usage
 
 ### Start serving the current directory
 ```bash
-bunserve
+bunserv
 ```
 
 ### Serve a specific directory on a custom port
 ```bash
-bunserve --dir ./dist --port 3000
+bunserv --dir ./dist --port 3000
 ```
 
 ### Enable caching and logging
 ```bash
-bunserve --cache --logreq --savelog
+bunserv --cache --logreq --savelog
 ```
 
 ## ⚙️ Configuration
@@ -57,16 +57,16 @@ bunserve --cache --logreq --savelog
 | `--cache` | Enable in-memory caching | Disabled |
 | `--logreq` | Log all incoming requests | Disabled |
 | `--savelog` | Save logs to a file | Disabled |
-| `--logfile` | Path to the logfile | `../bunserve-logs.txt` |
+| `--logfile` | Path to the logfile | `../bunserv-logs.txt` |
 
 ## 📊 Benchmarks
 
-`bunserve` isn't just simpler, it's significantly faster and more stable under load.
+`bunserv` isn't just simpler, it's significantly faster and more stable under load.
 
 ### Performance Comparison
 Benchmark conducted using `loadtest` with 60 concurrent clients for 10 seconds on Macbook Pro M2 Pro (14", 12c CPU, 19c GPU).
 
-| Metric | `http-server` (Node.js) | `bunserve` (Bun) | Improvement |
+| Metric | `http-server` (Node.js) | `bunserv` (Bun) | Improvement |
 | :--- | :--- | :--- | :--- |
 | **Requests per Second** | 2,925 | **12,345** | **4.2x Faster** |
 | **Mean Latency** | 20 ms | **4.4 ms** | **4.5x Lower** |
