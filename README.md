@@ -61,10 +61,10 @@ bunserve --cache --logreq --savelog
 
 ## 📊 Benchmarks
 
-`bunserve` isn't just simpler—it's significantly faster and more stable under load.
+`bunserve` isn't just simpler, it's significantly faster and more stable under load.
 
 ### Performance Comparison
-Benchmark conducted using `loadtest` with 60 concurrent clients for 10 seconds.
+Benchmark conducted using `loadtest` with 60 concurrent clients for 10 seconds on Macbook Pro M2 Pro (14", 12c CPU, 19c GPU).
 
 | Metric | `http-server` (Node.js) | `bunserve` (Bun) | Improvement |
 | :--- | :--- | :--- | :--- |
@@ -74,24 +74,10 @@ Benchmark conducted using `loadtest` with 60 concurrent clients for 10 seconds.
 | **Error Rate** | 33.8% | **0.0%** | **100% Stable** |
 
 ### Throughput (Requests per Second)
-```mermaid
-graph LR
-    BS["bunserve (12,345 RPS)"]
-    HS["http-server (2,925 RPS)"]
-    
-    style BS fill:#4ade80,stroke:#22c55e
-    style HS fill:#f87171,stroke:#ef4444
-```
+![](./images/req-per-sec.png)
 
 ### Latency (Mean, Lower is Better)
-```mermaid
-graph RL
-    BSL["bunserve (4.4ms)"]
-    HSL["http-server (20ms)"]
-    
-    style BSL fill:#4ade80,stroke:#22c55e
-    style HSL fill:#f87171,stroke:#ef4444
-```
+![](./images/latency.png)
 
 ## 🏗 Development
 
