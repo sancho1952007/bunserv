@@ -8,15 +8,15 @@
     "simple",
     "zero-config",
     "optimized",
-    "bunserve"
+    "bunserv"
   ],
-  "homepage": "https://github.com/sancho1952007/bunserve#readme",
+  "homepage": "https://github.com/sancho1952007/bunserv#readme",
   "bugs": {
-    "url": "https://github.com/sancho1952007/bunserve/issues"
+    "url": "https://github.com/sancho1952007/bunserv/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sancho1952007/bunserve.git"
+    "url": "git+https://github.com/sancho1952007/bunserv.git"
   },
   "license": "ISC",
   "author": "Sancho Godinho",
