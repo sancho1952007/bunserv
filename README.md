@@ -13,6 +13,7 @@
 - **📁 Directory Listing**: Automatically generates a clean HTML listing for directories (if no `index.html` is present).
 - **💾 Caching**: Built-in memory caching for high-performance asset delivery.
 - **📝 Advanced Logging**: Optional request logging to console or persistent files.
+- **🚫 Zero Dependencies**: No 3rd party dependencies used therefore, better safety + better optimization + less vulnerabilities.
 - **🛠 Customizable**: Fine-grained control over ports, hostnames, and root directories.
 
 ## 📦 Installation
@@ -72,12 +73,16 @@ Benchmark conducted using `loadtest` with 60 concurrent clients for 10 seconds o
 | **Mean Latency** | 20 ms | **4.4 ms** | **4.5x Lower** |
 | **99% Latency** | 78 ms | **10 ms** | **7.8x Lower** |
 | **Error Rate** | 33.8% | **0.0%** | **100% Stable** |
+| **Idle RAM Usage** | 192.0 MB | 11.7 MB | **16.4x Lower** |
 
 ### Throughput (Requests per Second)
 ![](./images/req-per-sec.png)
 
 ### Latency (Mean, Lower is Better)
 ![](./images/latency.png)
+
+### Idle RAM usage (Lower is Better)
+![](./images/idle-ram.png)
 
 ## 🏗 Development
 
